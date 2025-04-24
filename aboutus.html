@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>About Us - PVD Grocery Store</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/vendor.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- SVG Icons (same as home page) -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <!-- All SVG symbols from home page -->
+    </svg>
+
+    <div class="preloader-wrapper">
+      <div class="preloader"></div>
+    </div>
+
+    <!-- Offcanvas Cart (same as home page) -->
+    <div
+      class="offcanvas offcanvas-end"
+      data-bs-scroll="true"
+      tabindex="-1"
+      id="offcanvasCart"
+    >
+      <!-- Cart content from home page -->
+    </div>
+
+    <!-- Offcanvas Menu (same as home page) -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar">
+      <!-- Menu content from home page -->
+    </div>
+
+    <!-- Header (same as home page) -->
+    <header>
+      <div class="container-fluid">
+        <div class="row py-3 border-bottom">
+          <div
+            class="col-sm-4 col-lg-2 text-center text-sm-start d-flex gap-3 justify-content-center justify-content-md-start"
+          >
+            <div class="d-flex align-items-center my-3 my-sm-0">
+              <a href="index.html">
+                <img src="images/logo.svg" alt="logo" class="img-fluid" />
+              </a>
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <use xlink:href="#menu"></use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="col-sm-6 offset-sm-2 offset-md-0 col-lg-4">
+            <div class="search-bar row bg-light p-2 rounded-4">
+              <div class="col-md-4 d-none d-md-block">
+                <select class="form-select border-0 bg-transparent">
+                  <option>All Categories</option>
+                  <option>Groceries</option>
+                  <option>Drinks</option>
+                  <option>Chocolates</option>
+                </select>
+              </div>
+              <div class="col-11 col-md-7">
+                <form
+                  id="search-form"
+                  class="text-center"
+                  action="index.html"
+                  method="post"
+                >
+                  <input
+                    type="text"
+                    class="form-control border-0 bg-transparent"
+                    placeholder="Search for more than 20,000 products"
+                  />
+                </form>
+              </div>
+              <div class="col-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <ul
+              class="navbar-nav list-unstyled d-flex flex-row gap-3 gap-lg-5 justify-content-center flex-wrap align-items-center mb-0 fw-bold text-uppercase text-dark"
+            >
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item active">
+                <a href="about.html" class="nav-link">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle pe-3"
+                  role="button"
+                  id="pages"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Pages</a
+                >
+                <ul
+                  class="dropdown-menu border-0 p-3 rounded-0 shadow"
+                  aria-labelledby="pages"
+                >
+                  <li>
+                    <a href="index.html" class="dropdown-item">Shop </a>
+                  </li>
+                  <li>
+                    <a href="index.html" class="dropdown-item"
+                      >Single Product
+                    </a>
+                  </li>
+                  <li><a href="index.html" class="dropdown-item">Cart </a></li>
+                  <li>
+                    <a href="index.html" class="dropdown-item">Checkout </a>
+                  </li>
+                  <li><a href="index.html" class="dropdown-item">Blog </a></li>
+                  <li>
+                    <a href="index.html" class="dropdown-item">Single Post </a>
+                  </li>
+                  <li>
+                    <a href="index.html" class="dropdown-item">Styles </a>
+                  </li>
+                  <li>
+                    <a href="index.html" class="dropdown-item">Contact </a>
+                  </li>
+                  <li>
+                    <a href="index.html" class="dropdown-item">Thank You </a>
+                  </li>
+                  <li>
+                    <a href="index.html" class="dropdown-item">My Account </a>
+                  </li>
+                  <li>
+                    <a href="index.html" class="dropdown-item">404 Error </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="col-sm-8 col-lg-2 d-flex gap-5 align-items-center justify-content-center justify-content-sm-end"
+          >
+            <ul class="d-flex justify-content-end list-unstyled m-0">
+              <li>
+                <a href="#" class="p-2 mx-1">
+                  <svg width="24" height="24">
+                    <use xlink:href="#user"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="p-2 mx-1">
+                  <svg width="24" height="24">
+                    <use xlink:href="#wishlist"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="p-2 mx-1"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasCart"
+                  aria-controls="offcanvasCart"
+                >
+                  <svg width="24" height="24">
+                    <use xlink:href="#shopping-bag"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section
+      class="py-5"
+      style="
+        background-image: url('images/about-banner.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <div class="container-lg py-5">
+        <div class="row">
+          <div class="col-md-12 text-center text-white">
+            <h1 class="display-4 fw-bold">About PVD Grocery Store</h1>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb justify-content-center">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">About Us</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-5">
+      <div class="container-lg">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <img
+              src="images/about-image.jpg"
+              alt="About PVD Grocery"
+              class="img-fluid rounded"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h2 class="mb-4">Our Story</h2>
+            <p class="lead">
+              Founded in 2010, PVD Grocery Store has grown from a small local
+              market to one of the leading grocery chains in the region.
+            </p>
+            <p>
+              Our journey began with a simple mission: to provide fresh,
+              high-quality groceries at affordable prices while delivering
+              exceptional customer service. Today, we continue that tradition
+              with multiple locations and an extensive online shopping
+              experience.
+            </p>
+            <p>
+              We take pride in sourcing our products from local farmers and
+              trusted suppliers who share our commitment to quality and
+              sustainability.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="py-5 bg-light">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-md-12 text-center mb-5">
+            <h2>Our Mission & Values</h2>
+            <p class="lead">What drives us every day</p>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100 border-0 text-center p-4">
+              <div class="card-body">
+                <div class="text-primary mb-3">
+                  <svg width="48" height="48">
+                    <use xlink:href="#fresh"></use>
+                  </svg>
+                </div>
+                <h5 class="card-title">Freshness Guaranteed</h5>
+                <p class="card-text">
+                  We deliver only the freshest produce, meats, and dairy
+                  products to your table.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 border-0 text-center p-4">
+              <div class="card-body">
+                <div class="text-primary mb-3">
+                  <svg width="48" height="48">
+                    <use xlink:href="#quality"></use>
+                  </svg>
+                </div>
+                <h5 class="card-title">Quality Products</h5>
+                <p class="card-text">
+                  Every product in our store meets our rigorous quality standards.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 border-0 text-center p-4">
+              <div class="card-body">
+                <div class="text-primary mb-3">
+                  <svg width="48" height="48">
+                    <use xlink:href="#community"></use>
+                  </svg>
+                </div>
+                <h5 class="card-title">Community Focus</h5>
+                <p class="card-text">
+                  We support local farmers and give back to the communities we
+                  serve.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-5">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-md-12 text-center mb-5">
+            <h2>Meet Our Team</h2>
+            <p class="lead">The people behind PVD Grocery</p>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+          <div class="col">
+            <div class="card border-0 text-center">
+              <img
+                src="images/team-1.jpg"
+                class="card-img-top rounded-circle mx-auto"
+                alt="Team Member"
+                style="width: 150px; height: 150px; object-fit: cover"
+              />
+              <div class="card-body">
+                <h5 class="card-title">John Smith</h5>
+                <p class="text-muted">Founder & CEO</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 text-center">
+              <img
+                src="images/team-2.jpg"
+                class="card-img-top rounded-circle mx-auto"
+                alt="Team Member"
+                style="width: 150px; height: 150px; object-fit: cover"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Sarah Johnson</h5>
+                <p class="text-muted">Head of Operations</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 text-center">
+              <img
+                src="images/team-3.jpg"
+                class="card-img-top rounded-circle mx-auto"
+                alt="Team Member"
+                style="width: 150px; height: 150px; object-fit: cover"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Michael Brown</h5>
+                <p class="text-muted">Procurement Manager</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 text-center">
+              <img
+                src="images/team-4.jpg"
+                class="card-img-top rounded-circle mx-auto"
+                alt="Team Member"
+                style="width: 150px; height: 150px; object-fit: cover"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Emily Davis</h5>
+                <p class="text-muted">Customer Service Director</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5 bg-light">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-md-12 text-center mb-5">
+            <h2>What Our Customers Say</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="swiper testimonial-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card border-0 bg-white p-4">
+                    <div class="card-body text-center">
+                      <div class="mb-3">
+                        <svg width="24" height="24" class="text-warning">
+                          <use xlink:href="#star-full"></use>
+                        </svg>
+                        <svg width="24" height="24" class="text-warning">
+                          <use xlink:href="#star-full"></use>
+                        </svg>
+                        <svg width="24" height="24" class="text-warning">
+                          <use xlink:href="#star-full"></use>
+                        </svg>
+                        <svg width="24" height="24" class="text-warning">
+                          <use xlink:href="#star-full"></use>
+                        </svg>
+                        <svg width="24" height="24" class="text-warning">
+                          <use xlink:href="#star-full"></use>
+                        </svg>
+                      </div>
+                      <p class="card-text">
+                        "PVD Grocery has the freshest produce I've found in the
+                        area. Their delivery service is fast and reliable. Highly
+                        recommend!"
+                      </p>
+                      <h5 class="card-title mt-3">- Robert Johnson</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card border-0 bg-white p-4">
+                    <div class="card-body text-center">
+                      <div class="mb-3">
+                        <svg width="24" height="24" class="text-warning">
+                          <use xlink:href="#star-full"></use>
+                        </svg>
+                        <svg width="24" height="24" class="text-warning">
+                          <use xlink:href="#star-full"></use>
+                        </svg>
+                        <svg width="24" height="24" class="text-warning">
+                          <use xlink:href="#star-full"></use>
+                        </svg>
+                        <svg width="24" height="24" class="text-warning">
+                          <use xlink:href="#star-full"></use>
+                        </svg>
+                        <svg width="24" height="24" class="text-warning">
+                          <use xlink:href="#star-full"></use>
+                        </svg>
+                      </div>
+                      <p class="card-text">
+                        "I love shopping at PVD. The staff is friendly, the
+                        store is clean, and they always have what I need. Their
+                        organic selection is fantastic!"
+                      </p>
+                      <h5 class="card-title mt-3">- Maria Garcia</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card border-0 bg-white p-4">
+                    <div class="card-body text-center">
+                      <div class="mb-3">
+                        <svg width="24" height="24" class="text-warning">
+                          <use xlink:href="#star-full"></use>
+                        </svg>
+                        <svg width="24" height="24" class="text-warning">
+                          <use xlink:href="#star-full"></use>
+                        </svg>
+                        <svg width="24" height="24" class="text-warning">
+                          <use xlink:href="#star-full"></use>
+                        </svg>
+                        <svg width="24" height="24" class="text-warning">
+                          <use xlink:href="#star-full"></use>
+                        </svg>
+                        <svg width="24" height="24" class="text-warning">
+                          <use xlink:href="#star-half"></use>
+                        </svg>
+                      </div>
+                      <p class="card-text">
+                        "The online ordering system is so convenient. I can get
+                        all my groceries delivered right to my door. The quality
+                        is consistently excellent."
+                      </p>
+                      <h5 class="card-title mt-3">- David Wilson</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white">
+      <div class="container-lg">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <h3>Ready to experience the PVD difference?</h3>
+            <p class="mb-0">
+              Join thousands of satisfied customers who trust us for their
+              grocery needs.
+            </p>
+          </div>
+          <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+            <a
+              href="#"
+              class="btn btn-light btn-lg rounded-pill px-4 py-2 text-primary"
+              >Shop Now</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer (same as home page) -->
+    <footer class="py-5">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="footer-menu">
+              <img src="images/logo.svg" width="240" height="70" alt="logo" />
+              <div class="social-links mt-3">
+                <ul class="d-flex list-unstyled gap-2">
+                  <li>
+                    <a href="#" class="btn btn-outline-light">
+                      <svg width="16" height="16">
+                        <use xlink:href="#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn btn-outline-light">
+                      <svg width="16" height="16">
+                        <use xlink:href="#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn btn-outline-light">
+                      <svg width="16" height="16">
+                        <use xlink:href="#youtube"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn btn-outline-light">
+                      <svg width="16" height="16">
+                        <use xlink:href="#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn btn-outline-light">
+                      <svg width="16" height="16">
+                        <use xlink:href="#amazon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-2 col-sm-6">
+            <div class="footer-menu">
+              <h5 class="widget-title">PVD</h5>
+              <ul class="menu-list list-unstyled">
+                <li class="menu-item">
+                  <a href="about.html" class="nav-link">About us</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="nav-link">Conditions </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="nav-link">Our Journals</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="nav-link">Careers</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="nav-link">Affiliate Programme</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="nav-link">Ultras Press</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6">
+            <div class="footer-menu">
+              <h5 class="widget-title">Quick Links</h5>
+              <ul class="menu-list list-unstyled">
+                <li class="menu-item">
+                  <a href="#" class="nav-link">Offers</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="nav-link">Discount Coupons</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="nav-link">Stores</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="nav-link">Track Order</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="nav-link">Shop</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="nav-link">Info</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6">
+            <div class="footer-menu">
+              <h5 class="widget-title">Customer Service</h5>
+              <ul class="menu-list list-unstyled">
+                <li class="menu-item">
+                  <a href="#" class="nav-link">FAQ</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="nav-link">Contact</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="nav-link">Privacy Policy</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="nav-link">Returns & Refunds</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="nav-link">Cookie Guidelines</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="nav-link">Delivery Information</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="footer-menu">
+              <h5 class="widget-title">Subscribe Us</h5>
+              <p>
+                Subscribe to our newsletter to get updates about our grand
+                offers.
+              </p>
+              <form class="d-flex mt-3 gap-0" action="index.html">
+                <input
+                  class="form-control rounded-start rounded-0 bg-light"
+                  type="email"
+                  placeholder="Email Address"
+                  aria-label="Email Address"
+                />
+                <button
+                  class="btn btn-dark rounded-end rounded-0"
+                  type="submit"
+                >
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div id="footer-bottom">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-md-6 copyright">
+            <p>
+              © 2025 Palligoda Group Of Company (Pvt) Limited. All rights
+              reserved.
+            </p>
+          </div>
+          <div class="col-md-6 credit-link text-start text-md-end">
+            <p>
+              Distributed By
+              <a href="https://thushanvithana2.vercel.app/">THVNetwork</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      // Initialize testimonial swiper
+      const testimonialSwiper = new Swiper(".testimonial-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+          },
+          992: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

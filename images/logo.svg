@@ -3,6 +3,6 @@
     .main { font: bold 80px Arial, sans-serif; fill: #c60000; }
     .sub { font: bold 16px Arial, sans-serif; fill: #000; }
   </style>
-  <text x="50" y="80" class="main">PVD</text>
+  <text x="49" y="80" class="main">PVD</text>
   <text x="50" y="100" class="sub">PALLIGODA GROUP </text>
 </svg>
